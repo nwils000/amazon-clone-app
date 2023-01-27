@@ -2,10 +2,15 @@ import React from "react";
 
 export default function NavbarUpper() {
   return (
-    <div>
-      <form>
+    <div className="container">
+      <form className="search-container">
         <label htmlFor="categories">
-          <select selected name="categories" value="All">
+          <select
+            className="search-dropdown"
+            selected
+            name="categories"
+            value="All"
+          >
             <option>&nbsp;&nbsp;&nbsp;All</option>
             <option>fds</option>
             <option>fds</option>
@@ -13,9 +18,10 @@ export default function NavbarUpper() {
             <option>fds</option>
           </select>
         </label>
-        <input type="text" />
-        <button>
+        <input className="search-input" type="text" />
+        <button className="search-button">
           <svg
+            className="search-icon"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 50 50"
             width="50px"
