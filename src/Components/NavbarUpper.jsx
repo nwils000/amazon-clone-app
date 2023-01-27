@@ -42,6 +42,74 @@ export default function NavbarUpper() {
         <img className="dropdown-flag" src={usFlag} alt="" />
         <p>EN</p>
       </button>
+
+      <div class="signin-dropdown">
+        <button class="signin-dropbtn">
+          <p className="signin__header">Hello, sign in</p>
+          <p className="signin__subheader">Account & Lists</p>
+        </button>
+        <div class="signin-dropdown-content">
+          <div className="signin-dropdown-content__grid">
+            <div className="signin-dropdown-header" href="/">
+              <button className="login-button">Sign in</button>
+              <p>New customer? Start here</p>
+            </div>
+            <div className="signin-dropdown-container">
+              <h2 className="signin-dropdown-subheader">Your Lists</h2>
+              <a href="/">List links</a>
+              <a href="/">List links</a>
+              <a href="/">List links</a>
+              <a href="/">List links</a>
+              <a href="/">List links</a>
+            </div>
+            <div className="signin-dropdown-container">
+              <h2 className="signin-dropdown-subheader">Your Account</h2>
+              <a className="link" href="/">
+                Account links
+              </a>
+              <a className="link" href="/">
+                Account links
+              </a>
+              <a className="link" href="/">
+                Account links
+              </a>
+              <a className="link" href="/">
+                Account links
+              </a>
+              <a className="link" href="/">
+                Account links
+              </a>
+              <a className="link" href="/">
+                Account links
+              </a>
+              <a className="link" href="/">
+                Account links
+              </a>
+              <a className="link" href="/">
+                Account links
+              </a>
+              <a className="link" href="/">
+                Account links
+              </a>
+              <a className="link" href="/">
+                Account links
+              </a>
+              <a className="link" href="/">
+                Account links
+              </a>
+              <a className="link" href="/">
+                Account links
+              </a>
+              <a className="link" href="/">
+                Account links
+              </a>
+              <a className="link" href="/">
+                Account links
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
