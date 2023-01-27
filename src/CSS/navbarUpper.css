@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 130px 165px 1fr;
   background-color: #131921;
   width: 100vw;
   min-width: 970px;
@@ -17,6 +17,32 @@
 /* Amzin Logo */
 .container img {
   height: 52px;
+}
+/* End */
+
+/* Location Button */
+.location-select__button {
+  text-align: left;
+  border: 0;
+  background-color: #131921;
+}
+
+.location-select__button p {
+  margin: 0;
+  background-color: #131921;
+}
+
+.location-select__button-p-1 {
+  color: #c9cccc;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.location-select__button-p-2 {
+  position: relative;
+  bottom: 5%;
+  font-weight: bold;
+  color: white;
 }
 /* End */
 

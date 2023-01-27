@@ -5,6 +5,10 @@ export default function NavbarUpper() {
   return (
     <div className="container">
       <img src={amazonLogo} alt="" />
+      <button className="location-select__button">
+        <p className="location-select__button-p-1">Hello</p>
+        <p className="location-select__button-p-2">Select your location</p>
+      </button>
       <form className="search-container">
         <label htmlFor="categories">
           <select
