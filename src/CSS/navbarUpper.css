@@ -1,4 +1,4 @@
-.container {
+.navbar-upper-container {
   display: grid;
   grid-template-columns: 130px 165px 1fr 75px 130px 85px 72px 6px;
   grid-template-rows: 60px;
@@ -8,16 +8,37 @@
   width: 100vw;
   min-width: 970px;
   height: 60px;
-
   margin-right: auto;
   margin-left: auto;
 }
-.container > * {
+
+.container__shadowed {
+  display: grid;
+  grid-template-columns: 130px 165px 1fr 75px 130px 85px 72px 6px;
+  grid-template-rows: 60px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: #131921;
+  width: 100vw;
+  min-width: 970px;
+  height: 60px;
+  box-shadow: 0px 10099px 0px 10000px rgba(0, 0, 0, 0.6);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar-upper-container > * {
+  margin: 5px;
+}
+.container__shadowed > * {
   margin: 5px;
 }
 
 /* Amzin Logo */
-.container img {
+.navbar-upper-container img {
+  height: 52px;
+}
+.container__shadowed img {
   height: 52px;
 }
 /* End */
@@ -56,9 +77,12 @@
   margin: 10px 5px;
 }
 
-.search-container:hover {
+.search-container__focused {
   border-radius: 5px;
   box-shadow: 0 0 0 2px #f90, 0 0 0 3px rgb(255 153 0 / 50%);
+  display: grid;
+  grid-template-columns: 60px 1fr 50px;
+  margin: 10px 5px;
 }
 
 .search-dropdown {
@@ -83,6 +107,12 @@
 
 .search-input:focus {
   outline: none;
+}
+
+.search-input {
+  font-size: 1rem;
+  padding-left: 0.6rem;
+  padding-bottom: 0.3rem;
 }
 
 .search-button:focus {
@@ -113,12 +143,6 @@
   top: 3%;
 }
 
-.search-input {
-  font-size: 1rem;
-  padding-left: 0.6rem;
-  padding-bottom: 0.3rem;
-}
-
 /* End */
 
 /* Flag */
@@ -137,7 +161,12 @@
   left: 10%;
 }
 
-.container .dropdown-flag {
+.navbar-upper-container .dropdown-flag {
+  height: 14px;
+  position: relative;
+  bottom: -15%;
+}
+.container__shadowed .dropdown-flag {
   height: 14px;
   position: relative;
   bottom: -15%;
@@ -186,7 +215,6 @@
   background-color: #f9f9f9;
   width: 500px;
   height: 500px;
-  box-shadow: 0px 0px 0px 10000px rgba(0, 0, 0, 0.118);
   z-index: 1;
   right: -60%;
   border-radius: 3px;

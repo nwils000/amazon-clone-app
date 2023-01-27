@@ -1,17 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import amazonLogo from "../Photos/amazonLogo.png";
 import usFlag from "../Photos/usFlag.png";
 import shoppingCart from "../Photos/shoppingCart.png";
 
 export default function NavbarUpper() {
+  const [searchContainerClass, setSearchContainerClass] =
+    useState("search-container");
+  const [pageShadow, setPageShadow] = useState("navbar-upper-container");
+
   return (
-    <div className="container">
+    <div className={pageShadow}>
       <img src={amazonLogo} alt="" />
       <button className="location-select__button">
         <p className="location-select__button-p-1">Hello</p>
         <p className="location-select__button-p-2">Select your location</p>
       </button>
-      <form className="search-container">
+      <form
+        onClick={() => {
+          setSearchContainerClass("search-container__focused");
+          setPageShadow("container__shadowed");
+        }}
+        onBlur={() => {
+          setSearchContainerClass("search-container");
+          setPageShadow("navbar-upper-container");
+        }}
+        className={searchContainerClass}
+      >
         <label htmlFor="categories">
           <select
             className="search-dropdown"
@@ -44,7 +58,11 @@ export default function NavbarUpper() {
         <p>EN</p>
       </button>
 
-      <div class="signin-dropdown">
+      <div
+        class="signin-dropdown"
+        onMouseOver={() => setPageShadow("container__shadowed")}
+        onMouseOut={() => setPageShadow("navbar-upper-container")}
+      >
         <button class="signin-dropbtn">
           <p className="signin__header">Hello, sign in</p>
           <p className="signin__subheader">Account & Lists</p>
