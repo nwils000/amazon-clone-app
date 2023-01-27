@@ -1,5 +1,6 @@
 import React from "react";
 import amazonLogo from "../Photos/amazonLogo.png";
+import usFlag from "../Photos/usFlag.png";
 
 export default function NavbarUpper() {
   return (
@@ -37,6 +38,10 @@ export default function NavbarUpper() {
           </svg>
         </button>
       </form>
+      <button className="language-select">
+        <img className="dropdown-flag" src={usFlag} alt="" />
+        <p>EN</p>
+      </button>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 130px 165px 1fr;
+  grid-template-columns: 130px 165px 1fr 75px;
   background-color: #131921;
   width: 100vw;
   min-width: 970px;
@@ -43,6 +43,29 @@
   bottom: 5%;
   font-weight: bold;
   color: white;
+}
+/* End */
+
+/* Flag */
+.language-select {
+  background-color: #131921;
+  border-style: none;
+}
+
+.language-select p {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+  display: inline;
+  position: relative;
+  bottom: -12%;
+  left: 10%;
+}
+
+.container .dropdown-flag {
+  height: 14px;
+  position: relative;
+  bottom: -15%;
 }
 /* End */
 
