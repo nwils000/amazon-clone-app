@@ -1,0 +1,18 @@
+.lower__container {
+  display: flex;
+  background-color: #242f3d;
+  width: 100vw;
+  min-width: 970px;
+  height: 39px;
+  margin: 0 auto 0 auto;
+  list-style: none;
+  color: white;
+  align-items: center;
+  padding-left: 27px;
+  overflow: hidden;
+}
+
+.list__item {
+  padding-right: 30px;
+  white-space: nowrap;
+}
