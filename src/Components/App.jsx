@@ -1,3 +1,4 @@
+import "../CSS/app.css";
 import React from "react";
 import Navbar from "./Navbar";
 
