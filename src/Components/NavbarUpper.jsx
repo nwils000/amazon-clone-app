@@ -1,8 +1,10 @@
 import React from "react";
+import amazonLogo from "../Photos/amazonLogo.png";
 
 export default function NavbarUpper() {
   return (
     <div className="container">
+      <img src={amazonLogo} alt="" />
       <form className="search-container">
         <label htmlFor="categories">
           <select

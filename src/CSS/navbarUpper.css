@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 130px 1fr;
   background-color: #131921;
   width: 100vw;
   min-width: 970px;
@@ -13,6 +13,12 @@
 .container > * {
   margin: 5px;
 }
+
+/* Amzin Logo */
+.container img {
+  height: 52px;
+}
+/* End */
 
 /* Search Bar */
 
