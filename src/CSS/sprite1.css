@@ -1,0 +1,29 @@
+.sprite1 {
+  background: url("../Photos/sprite1.png") no-repeat top left;
+  width: 305px;
+  height: 314px;
+}
+.sprite1.pexels-aman-jakhar-2048548 {
+  background-position: 0 -59px;
+}
+.sprite1.pexels-amar-preciado-9993287 {
+  background-position: -330px -120px;
+}
+.sprite1.pexels-evg-kowalievska-1040173 {
+  background-position: -660px 0;
+}
+.sprite1.pexels-godisable-jacob-794062 {
+  background-position: -990px -20px;
+}
+.sprite1.pexels-kindel-media-6573713 {
+  background-position: -1320px -40px;
+}
+.sprite1.pexels-kristina-paukshtite-704805 {
+  background-position: -1650px -90px;
+}
+.sprite1.pexels-luis-quintero-4000090 {
+  background-position: -1980px -80px;
+}
+.sprite1.pexels-matheus-bertelli-2905238 {
+  background-position: -2310px -90px;
+}

@@ -1,6 +1,10 @@
 @import-normalize;
 @import "navbarUpper";
 @import "navbarLower";
+@import "body";
+@import "sprite1";
+@import "sprite2";
+@import "sprite3";
 
 *,
 *::before,
