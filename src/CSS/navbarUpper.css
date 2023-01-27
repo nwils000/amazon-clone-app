@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 130px 165px 1fr 75px 130px 85px 72px;
+  grid-template-columns: 130px 165px 1fr 75px 130px 85px 72px 6px;
   grid-template-rows: 60px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -8,8 +8,7 @@
   width: 100vw;
   min-width: 970px;
   height: 60px;
-  position: relative;
-  right: 5px;
+
   margin-right: auto;
   margin-left: auto;
 }
@@ -112,6 +111,12 @@
   height: 25px;
   right: 13%;
   top: 3%;
+}
+
+.search-input {
+  font-size: 1rem;
+  padding-left: 0.6rem;
+  padding-bottom: 0.3rem;
 }
 
 /* End */
