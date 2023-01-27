@@ -1,6 +1,7 @@
 import React from "react";
 import amazonLogo from "../Photos/amazonLogo.png";
 import usFlag from "../Photos/usFlag.png";
+import shoppingCart from "../Photos/shoppingCart.png";
 
 export default function NavbarUpper() {
   return (
@@ -110,6 +111,13 @@ export default function NavbarUpper() {
           </div>
         </div>
       </div>
+      <button className="orders__container">
+        <p className="orders__header">Returns</p>
+        <p className="orders__subheader">& Orders</p>
+      </button>
+      <button className="checkout">
+        <img className="shopping-cart__photo" src={shoppingCart} alt="" />
+      </button>
     </div>
   );
 }
