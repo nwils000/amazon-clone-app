@@ -118,6 +118,7 @@ export default function NavbarUpper() {
       <button className="checkout">
         <img className="shopping-cart__photo" src={shoppingCart} alt="" />
       </button>
+      <div></div>
     </div>
   );
 }
