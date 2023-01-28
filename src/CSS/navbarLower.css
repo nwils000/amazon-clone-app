@@ -10,6 +10,7 @@
   align-items: center;
   padding-left: 27px;
   overflow: hidden;
+  cursor: default;
 }
 
 .list__item {

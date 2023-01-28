@@ -1,0 +1,17 @@
+.pokemonSprite {
+  background: url("../Photos/pokemonSprite.png") no-repeat top left;
+  height: 240px;
+}
+.pokemonSprite.imgbin_pikachu-pokmon-x-and-y-haunter-gengar-png {
+  background-position: 0 0;
+  width: 240px;
+  height: 209px;
+}
+.pokemonSprite.imgbin_pokmon-x-and-y-pokmon-go-ash-ketchum-pikachu-squirtle-png {
+  background-position: -250px 0;
+  width: 234px;
+}
+.pokemonSprite.imgbin_pokmon-x-and-y-torchic-pokkn-tournament-may-png {
+  background-position: -494px 0;
+  width: 149px;
+}

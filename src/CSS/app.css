@@ -6,6 +6,10 @@
 @import "sprite2";
 @import "sprite3";
 @import "sprite4";
+@import "pokemonSprite";
+@import "pokemonGrid";
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 *,
 *::before,
