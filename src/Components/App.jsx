@@ -4,6 +4,7 @@ import { getItems } from "../Arrays/ItemsArray";
 import Navbar from "./Navbar";
 import Body from "./Body";
 import Cart from "./Cart";
+import Footer from "./Footer";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -25,6 +26,7 @@ function App() {
       <Navbar />
       <Body handleAddToCart={handleAddToCart} />
       <Cart cart={cart} />
+      <Footer />
     </>
   );
 }
