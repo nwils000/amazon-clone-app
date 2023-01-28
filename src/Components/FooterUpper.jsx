@@ -1,11 +1,12 @@
 import React from "react";
+import amazonLogoFooter from "../Photos/amazonLogoFooter.png";
 
 export default function FooterUpper() {
   return (
     <div>
-      <button>Back to top</button>
-      <div>
-        <ul>
+      <button className="back-to-top__button">Back to top</button>
+      <div className="footer-upper-lists__container">
+        <ul className="footer-upper-list">
           <li>Get to Know Us</li>
           <li>Careers</li>
           <li>Amazon Newsletter</li>
@@ -17,7 +18,7 @@ export default function FooterUpper() {
           <li>Amazon Devices</li>
           <li>Amazon Science</li>
         </ul>
-        <ul>
+        <ul className="footer-upper-list">
           <li>Make Money with Us</li>
           <li>Sell products on Amazon</li>
           <li>Sell apps on Amazon</li>
@@ -31,7 +32,7 @@ export default function FooterUpper() {
           <li>Host an Amazon Hub</li>
           <li>See More Ways to Make Money</li>
         </ul>
-        <ul>
+        <ul className="footer-upper-list">
           <li>Amazon Payment Products</li>
           <li>Amazon Rewards Visa Signature Cards</li>
           <li>Amazon Store Card</li>
@@ -42,7 +43,7 @@ export default function FooterUpper() {
           <li>Reload Your Balance</li>
           <li>Amazon Currency Converter</li>
         </ul>
-        <ul>
+        <ul className="footer-upper-list">
           <li>Let Us Help You</li>
           <li>Amazon and COVID-19</li>
           <li>Your Account</li>
@@ -56,8 +57,10 @@ export default function FooterUpper() {
           <li>Help</li>
         </ul>
       </div>
-      <div>
-        <a href="/">Logo</a>
+      <div className="footer-upper-lower">
+        <a href="/">
+          <img src={amazonLogoFooter} alt="" />
+        </a>
         <button>English</button>
         <button>
           {/* <img src="" alt="" /> */}
