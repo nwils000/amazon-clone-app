@@ -8,6 +8,7 @@ import Cart from "./Cart";
 function App() {
   const [cart, setCart] = useState([]);
   const [cartAmount, setCartAmount] = useState(0);
+  const [cartAmountClass, setCartAmountClass] = useState("cart-amount");
   const items = getItems();
 
   useEffect(() => {
@@ -15,9 +16,13 @@ function App() {
     let newCart = [...cart];
     newCart.map((cartItem) => (number += cartItem.quantity));
     setCartAmount(number);
+
+    if (cartAmount > 9 && cartAmount < 100)
+      setCartAmountClass("cart-amount-10-plus");
+    if (cartAmount > 99) setCartAmountClass("cart-amount-99-plus");
     console.log(number);
     console.log(cart);
-  }, [cart]);
+  }, [cart, cartAmount]);
 
   function handleAddToCart(index) {
     const newItem = items[index];
@@ -37,7 +42,11 @@ function App() {
       <Route
         path="/"
         element={
-          <Home cartAmount={cartAmount} handleAddToCart={handleAddToCart} />
+          <Home
+            cartAmountClass={cartAmountClass}
+            cartAmount={cartAmount}
+            handleAddToCart={handleAddToCart}
+          />
         }
       ></Route>
       <Route path="/cart" element={<Cart cart={cart} />}></Route>

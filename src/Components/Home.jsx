@@ -3,11 +3,11 @@ import Navbar from "./Navbar";
 import Body from "./Body";
 import Footer from "./Footer";
 
-export default function Home({ handleAddToCart, cartAmount }) {
+export default function Home({ handleAddToCart, cartAmount, cartAmountClass }) {
   return (
     <>
-      <Navbar />
-      <Body cartAmount={cartAmount} handleAddToCart={handleAddToCart} />
+      <Navbar cartAmountClass={cartAmountClass} cartAmount={cartAmount} />
+      <Body handleAddToCart={handleAddToCart} />
       <Footer />
     </>
   );
