@@ -25,6 +25,7 @@
   box-shadow: 0px 10099px 0px 10000px rgba(0, 0, 0, 0.6);
   margin-right: auto;
   margin-left: auto;
+  z-index: ;
 }
 
 .navbar-upper-container > * {
