@@ -13,7 +13,7 @@
   column-gap: 70px;
   grid-template-rows: 452px;
   background-color: #242f3d;
-  color: white;
+  color: #dddddd;
   font-size: 0.9rem;
   justify-content: center;
   padding-top: 35px;
@@ -47,7 +47,15 @@
   cursor: pointer;
 }
 
+.footer-upper-list li:first-of-type {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 12px;
+}
+
 .footer-upper-list li {
   padding-bottom: 3px;
   list-style: none;
+  padding-bottom: 10px;
 }

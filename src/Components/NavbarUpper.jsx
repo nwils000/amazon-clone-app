@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import amazonLogo from "../Photos/amazonLogo.png";
+import { Link } from "react-router-dom";
 import usFlag from "../Photos/usFlag.png";
 import shoppingCart from "../Photos/shoppingCart.png";
 
@@ -133,9 +134,9 @@ export default function NavbarUpper() {
         <p className="orders__header">Returns</p>
         <p className="orders__subheader">& Orders</p>
       </button>
-      <button className="checkout">
+      <Link className="checkout" to="/cart">
         <img className="shopping-cart__photo" src={shoppingCart} alt="" />
-      </button>
+      </Link>
       <div></div>
     </div>
   );

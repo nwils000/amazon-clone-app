@@ -31,7 +31,7 @@
 
 .footer-lower-bottom a {
   text-decoration: none;
-  padding: 9px 0 0 0;
+  padding: 50px 0 0 0;
   color: #dddddd;
   font-size: 11px;
 }
@@ -43,4 +43,11 @@
   margin: 0;
   font-size: 11px;
   padding: 0.3rem 0 2.2rem 0;
+}
+
+.footer-lower-last-content1 {
+  grid-column: 3;
+}
+.footer-lower-last-content2 {
+  grid-column: 4;
 }

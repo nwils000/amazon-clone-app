@@ -1,8 +1,9 @@
 import React from "react";
 import PokemonAdd from "./PokemonAdd";
-export default function Body({ handleAddToCart }) {
+export default function Body({ handleAddToCart, cartAmount }) {
   return (
     <div className="body__container">
+      <h1>{cartAmount}</h1>
       <PokemonAdd />
       <div className="body__images">
         <div className="body__grid a">

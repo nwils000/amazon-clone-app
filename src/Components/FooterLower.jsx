@@ -6,16 +6,16 @@ export default function FooterLower() {
       <div className="footer-lower">
         <div className="footer-lower-div">
           <div>
-            <h3>Amazon Music</h3>
+            <h3>Amzin Music</h3>
             <p>Stream millions of songs</p>
           </div>
           <div>
-            <h3>Amazon Advertising</h3>
+            <h3>Amzin Advertising</h3>
             <p>Find, attract, and engage customers</p>
           </div>
           <div>
-            <h3>Amazon Drive</h3>
-            <p>Cloud storage from Amazon</p>
+            <h3>Amzin Drive</h3>
+            <p>Cloud storage from Amzin</p>
           </div>
           <div>
             <h3>6pm</h3>
@@ -30,19 +30,19 @@ export default function FooterLower() {
             <p>Audiobook Publishing Made Easy</p>
           </div>
           <div>
-            <h3>Sell on Amazon</h3>
+            <h3>Sell on Amzin</h3>
             <p>Start a Selling Account</p>
           </div>
           <div>
-            <h3>Amazon Business</h3>
+            <h3>Amzin Business</h3>
             <p>Everything For Your Business</p>
           </div>
           <div>
-            <h3>Amazon Fresh</h3>
+            <h3>Amzin Fresh</h3>
             <p>Groceries & More Right To Your Door</p>
           </div>
           <div>
-            <h3>AmazonGlobal</h3>
+            <h3>AmzinGlobal</h3>
             <p>Ship Orders Internationally</p>
           </div>
           <div>
@@ -50,11 +50,11 @@ export default function FooterLower() {
             <p>Experienced Pros Happiness Guarantee</p>
           </div>
           <div>
-            <h3>Amazon Ignite</h3>
+            <h3>Amzin Ignite</h3>
             <p>Sell your original Digital Educational Resources</p>
           </div>
           <div>
-            <h3>Amazon Web Services</h3>
+            <h3>Amzin Web Services</h3>
             <p>Scalable Cloud Computing Services</p>
           </div>
           <div>
@@ -98,7 +98,7 @@ export default function FooterLower() {
             <p>Indie Digital & Print Publishing Made Easy</p>
           </div>
           <div>
-            <h3>Amazon Photos</h3>
+            <h3>Amzin Photos</h3>
             <p>Unlimited Photo Storage Free With Prime</p>
           </div>
           <div>
@@ -110,7 +110,7 @@ export default function FooterLower() {
             <p>Designer Fashion Brands</p>
           </div>
           <div>
-            <h3>Amazon Warehouse</h3>
+            <h3>Amzin Warehouse</h3>
             <p>Great Deals on Quality Used Products</p>
           </div>
           <div>
@@ -142,15 +142,15 @@ export default function FooterLower() {
             <p>Real-Time Crime & Safety Alerts</p>
           </div>
           <div>
-            <h3>Amazon Subscription Boxes</h3>
+            <h3>Amzin Subscription Boxes</h3>
             <p>Top subscription boxes – right to your door</p>
           </div>
-          <div>
+          <div className="footer-lower-last-content1">
             <h3>PillPack</h3>
             <p>Pharmacy Simplified</p>
           </div>
-          <div>
-            <h3>Amazon Renewed</h3>
+          <div className="footer-lower-last-content2">
+            <h3>Amzin Renewed</h3>
             <p>Like-new products you can trust</p>
           </div>
         </div>
@@ -160,7 +160,8 @@ export default function FooterLower() {
           <a href="/">Your Ads Privacy Choices</a>
         </div>
         <p className="footer-lower-bottom-p">
-          © 1996-2023, Amazon.com, Inc. or its affiliates
+          This website is an artistic recreation of Amazon.com and is only for
+          personal use.
         </p>
       </div>
     </div>
