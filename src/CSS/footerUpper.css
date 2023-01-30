@@ -1,10 +1,18 @@
 .back-to-top__button {
+  display: block;
   height: 49px;
   width: 100%;
   text-align: center;
   background-color: #384759;
   color: white;
   border: none;
+  padding-top: 14px;
+  text-decoration: none;
+}
+
+.back-to-top__button:hover {
+  background-color: #495768;
+  cursor: pointer;
 }
 
 .footer-upper-lists__container {
@@ -58,4 +66,9 @@
   padding-bottom: 3px;
   list-style: none;
   padding-bottom: 10px;
+}
+
+.footer-upper-list li:not(:first-child):hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

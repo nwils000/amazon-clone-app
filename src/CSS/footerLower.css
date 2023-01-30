@@ -8,6 +8,11 @@
   justify-content: center;
   column-gap: 2.5rem;
 }
+.footer-lower-div h3:hover,
+.footer-lower-div p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .footer-lower-div h3 {
   color: #dddddd;

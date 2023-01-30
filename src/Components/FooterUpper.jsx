@@ -4,7 +4,9 @@ import amazonLogoFooter from "../Photos/amazonLogoFooter.png";
 export default function FooterUpper() {
   return (
     <div>
-      <button className="back-to-top__button">Back to top</button>
+      <a href="/" className="back-to-top__button">
+        Back to top
+      </a>
       <div className="footer-upper-lists__container">
         <ul className="footer-upper-list">
           <li>Get to Know Us</li>
