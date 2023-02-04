@@ -9,6 +9,9 @@ function App() {
   const [cart, setCart] = useState([]);
   const [cartAmount, setCartAmount] = useState(0);
   const [cartAmountClass, setCartAmountClass] = useState("cart-amount");
+  const [cartTotal, setCartTotal] = useState(0);
+  const [navbarCartAmountClass, setNavbarCartAmountClass] =
+    useState("navbar-cart-amount");
   const items = getItems();
 
   useEffect(() => {
@@ -17,12 +20,23 @@ function App() {
     newCart.map((cartItem) => (number += cartItem.quantity));
     setCartAmount(number);
 
-    if (cartAmount > 9 && cartAmount < 100)
+    if (cartAmount > 9 && cartAmount < 100) {
       setCartAmountClass("cart-amount-10-plus");
-    if (cartAmount > 99) setCartAmountClass("cart-amount-99-plus");
-    console.log(number);
-    console.log(cart);
+      setNavbarCartAmountClass("navbar-cart-amount-10-plus");
+    }
+    if (cartAmount > 99) {
+      setCartAmountClass("cart-amount-99-plus");
+      setNavbarCartAmountClass("navbar-cart-amount-99-plus");
+    }
+    calculateTotel();
   }, [cart, cartAmount]);
+
+  function calculateTotel() {
+    let number = 0;
+    let newCart = [...cart];
+    newCart.map((cartItem) => (number += cartItem.price * cartItem.quantity));
+    setCartTotal(number);
+  }
 
   function handleAddToCart(index) {
     const newItem = items[index];
@@ -43,13 +57,25 @@ function App() {
         path="/"
         element={
           <Home
+            navbarCartAmountClass={navbarCartAmountClass}
             cartAmountClass={cartAmountClass}
             cartAmount={cartAmount}
             handleAddToCart={handleAddToCart}
           />
         }
       ></Route>
-      <Route path="/cart" element={<Cart cart={cart} />}></Route>
+      <Route
+        path="/cart"
+        element={
+          <Cart
+            cartTotal={cartTotal}
+            navbarCartAmountClass={navbarCartAmountClass}
+            cartAmountClass={cartAmountClass}
+            cartAmount={cartAmount}
+            cart={cart}
+          />
+        }
+      ></Route>
     </Routes>
   );
 }

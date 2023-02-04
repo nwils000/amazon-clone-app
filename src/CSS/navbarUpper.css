@@ -10,11 +10,13 @@
   height: 60px;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .container__shadowed {
   display: grid;
-  grid-template-columns: 130px 165px 1fr 75px 130px 85px 72px 6px;
+  grid-template-columns: 130px 165px 1fr 75px 130px 85px 72px 17px;
   grid-template-rows: 60px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -25,6 +27,8 @@
   box-shadow: 0px 10099px 0px 10000px rgba(0, 0, 0, 0.6);
   margin-right: auto;
   margin-left: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .navbar-upper-container > * {
@@ -183,6 +187,8 @@
   cursor: pointer;
   height: 50px;
   width: 120px;
+  position: relative;
+  z-index: 2;
 }
 
 .login-button:hover {
@@ -311,7 +317,12 @@
   grid-template-columns: 1fr 72px 17px;
   grid-template-rows: 60px;
   top: 0%;
-  z-index: 2;
+}
+
+.navbar-checkout__wrapper {
+  position: relative;
+  top: 12%;
+  right: 4%;
 }
 
 .checkout {
@@ -328,13 +339,29 @@
   top: 21%;
 }
 
+.checkout .navbar-shopping-cart__photo {
+  height: 45px;
+  position: absolute;
+  top: 1.6%;
+  right: 5%;
+}
+
 .cart-amount {
   color: rgb(233, 151, 0);
   font-weight: bold;
   font-size: 1.3rem;
   position: relative;
-  bottom: 17%;
-  left: 48%;
+  bottom: 18%;
+  left: 49%;
+}
+
+.navbar-cart-amount {
+  color: rgb(233, 151, 0);
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 13%;
+  left: 53%;
 }
 
 .cart-amount-10-plus {
@@ -342,8 +369,16 @@
   font-weight: bold;
   font-size: 1.3rem;
   position: relative;
-  bottom: 17%;
-  left: 41%;
+  bottom: 19%;
+  left: 40%;
+}
+.navbar-cart-amount-10-plus {
+  color: rgb(233, 151, 0);
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: relative;
+  left: 43%;
+  bottom: 22px;
 }
 
 .cart-amount-99-plus {
@@ -351,7 +386,15 @@
   font-weight: bold;
   font-size: 0.9rem;
   position: relative;
-  bottom: -3%;
-  left: 38%;
+  bottom: -2%;
+  left: 39%;
+}
+.navbar-cart-amount-99-plus {
+  color: rgb(233, 151, 0);
+  font-weight: bold;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 11px;
+  left: 41%;
 }
 /* End */

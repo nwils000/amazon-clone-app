@@ -3,10 +3,19 @@ import Navbar from "./Navbar";
 import Body from "./Body";
 import Footer from "./Footer";
 
-export default function Home({ handleAddToCart, cartAmount, cartAmountClass }) {
+export default function Home({
+  handleAddToCart,
+  cartAmount,
+  cartAmountClass,
+  navbarCartAmountClass,
+}) {
   return (
     <>
-      <Navbar cartAmountClass={cartAmountClass} cartAmount={cartAmount} />
+      <Navbar
+        navbarCartAmountClass={navbarCartAmountClass}
+        cartAmountClass={cartAmountClass}
+        cartAmount={cartAmount}
+      />
       <Body handleAddToCart={handleAddToCart} />
       <Footer />
     </>

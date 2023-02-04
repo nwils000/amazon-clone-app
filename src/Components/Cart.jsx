@@ -1,10 +1,41 @@
 import React from "react";
 import CartList from "./CartList";
+import Navbar from "./Navbar";
 
-export default function Cart({ cart }) {
+export default function Cart({
+  cart,
+  cartTotal,
+  cartAmount,
+  cartAmountClass,
+  navbarCartAmountClass,
+}) {
   return (
-    <div>
-      <CartList cart={cart} />
-    </div>
+    <>
+      <Navbar
+        navbarCartAmountClass={navbarCartAmountClass}
+        cartAmountClass={cartAmountClass}
+        cartAmount={cartAmount}
+      />
+      <div className="cart-flex">
+        <div className="checkout__flex">
+          <div className="cart-list-heading-flex">
+            <div className="shopping-cart-title">Shopping Cart</div>
+            <div className="price-title">Price</div>
+          </div>
+          <div className="cart-items__container">
+            <CartList cart={cart} />
+          </div>
+        </div>
+        <div className="cart-checkout">
+          <div className="cart-checkout-shipping-text">
+            Your order qualifies for FREE Shipping.
+          </div>
+          <div>
+            <span className="subtotal">{`Subtotal (${cartAmount} items): `}</span>
+            <span className="cart-total">{`$${cartTotal}`}</span>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }

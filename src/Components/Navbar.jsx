@@ -4,10 +4,17 @@ import shoppingCart from "../Photos/shoppingCart.png";
 import NavbarUpper from "./NavbarUpper";
 import NavbarLower from "./NavbarLower";
 
-export default function Navbar({ cartAmount, cartAmountClass }) {
+export default function Navbar({
+  cartAmount,
+  cartAmountClass,
+  navbarCartAmountClass,
+}) {
   return (
     <>
-      <NavbarUpper cartAmountClass={cartAmountClass} cartAmount={cartAmount} />
+      <NavbarUpper
+        navbarCartAmountClass={navbarCartAmountClass}
+        cartAmount={cartAmount}
+      />
       <NavbarLower />
       <div className="checkout__wrapper">
         <div></div>

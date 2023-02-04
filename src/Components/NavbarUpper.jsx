@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import amazonLogo from "../Photos/amazonLogo.png";
-
+import { Link } from "react-router-dom";
+import shoppingCart from "../Photos/shoppingCart.png";
 import usFlag from "../Photos/usFlag.png";
 
-export default function NavbarUpper() {
+export default function NavbarUpper({ cartAmount, navbarCartAmountClass }) {
   const [searchContainerClass, setSearchContainerClass] =
     useState("search-container");
   const [pageShadow, setPageShadow] = useState("navbar-upper-container");
@@ -133,7 +134,16 @@ export default function NavbarUpper() {
         <p className="orders__header">Returns</p>
         <p className="orders__subheader">& Orders</p>
       </button>
-      <div></div>
+      <div className="navbar-checkout__wrapper">
+        <Link className="checkout" to="/cart">
+          <img
+            className="navbar-shopping-cart__photo"
+            src={shoppingCart}
+            alt=""
+          />
+          <p className={navbarCartAmountClass}>{cartAmount}</p>
+        </Link>
+      </div>
       <div></div>
     </div>
   );
