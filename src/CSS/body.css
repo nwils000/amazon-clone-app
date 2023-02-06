@@ -16,6 +16,10 @@ h3 {
   cursor: default;
 }
 
+h4 {
+  cursor: default;
+}
+
 .big-sprite {
   width: 277px;
   height: 314px;
@@ -93,6 +97,7 @@ h3 {
   left: 12%;
   font-weight: 400;
   font-size: 0.9rem;
+  z-index: 1;
 }
 
 .quad-grid-heading-bottom {

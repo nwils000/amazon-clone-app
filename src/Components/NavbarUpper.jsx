@@ -11,7 +11,9 @@ export default function NavbarUpper({ cartAmount, navbarCartAmountClass }) {
 
   return (
     <div className={pageShadow}>
-      <img src={amazonLogo} alt="" />
+      <a href="/">
+        <img src={amazonLogo} alt="" />
+      </a>
       <button className="location-select__button">
         <p className="location-select__button-p-1">Hello</p>
         <p className="location-select__button-p-2">Select your location</p>
@@ -71,7 +73,9 @@ export default function NavbarUpper({ cartAmount, navbarCartAmountClass }) {
         <div class="signin-dropdown-content">
           <div className="signin-dropdown-content__grid">
             <div className="signin-dropdown-header" href="/">
-              <button className="login-button">Sign in</button>
+              <a href="/sign-in" className="login-button">
+                Sign in
+              </a>
               <p>New customer? Start here</p>
             </div>
             <div className="signin-dropdown-container">

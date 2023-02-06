@@ -31,7 +31,7 @@ const items = [
     id: 5,
     name: "Luggage Set",
     pictureClass: "sprite4 pexels-dids-1986996",
-    price: 336,
+    price: 166,
     quantity: 1,
   },
   {
