@@ -45,7 +45,9 @@ export default function Cart({
             <span className="subtotal">{`Subtotal (${cartAmount} items): `}</span>
             <span className="cart-total">{`$${cartTotal}`}</span>
           </div>
-          <div className="checkout-button">Proceed to checkout</div>
+          <div className="checkout-button">
+            <a href="/sign-in">Proceed to checkout</a>
+          </div>
         </div>
       </div>
       <Footer top={"/cart"} />

@@ -137,6 +137,11 @@
   text-align: center;
 }
 
+.checkout-button a {
+  text-decoration: none;
+  color: black;
+}
+
 .checkout-button:hover {
   cursor: pointer;
   background-color: #f3ce13;

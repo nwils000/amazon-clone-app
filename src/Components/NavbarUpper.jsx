@@ -37,10 +37,14 @@ export default function NavbarUpper({ cartAmount, navbarCartAmountClass }) {
             value="All"
           >
             <option>&nbsp;&nbsp;&nbsp;All</option>
-            <option>fds</option>
-            <option>fds</option>
-            <option>fds</option>
-            <option>fds</option>
+            <option>&nbsp;&nbsp;&nbsp;Apps & Games</option>
+            <option>
+              &nbsp;&nbsp;&nbsp;Arts, Crafts, & Sewing&nbsp;&nbsp;&nbsp;
+            </option>
+            <option>&nbsp;&nbsp;&nbsp;Appliances</option>
+            <option>&nbsp;&nbsp;&nbsp;Men</option>
+            <option>&nbsp;&nbsp;&nbsp;Children</option>
+            <option>&nbsp;&nbsp;&nbsp;Baby</option>
           </select>
         </label>
         <input className="search-input" type="text" />
