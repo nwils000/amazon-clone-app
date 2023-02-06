@@ -17,7 +17,7 @@ export default function Home({
         cartAmount={cartAmount}
       />
       <Body handleAddToCart={handleAddToCart} />
-      <Footer />
+      <Footer top={"/"} />
     </>
   );
 }

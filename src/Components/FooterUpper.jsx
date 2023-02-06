@@ -1,10 +1,10 @@
 import React from "react";
 import amazonLogoFooter from "../Photos/amazonLogoFooter.png";
 
-export default function FooterUpper() {
+export default function FooterUpper({ top }) {
   return (
     <div>
-      <a href="/" className="back-to-top__button">
+      <a href={top} className="back-to-top__button">
         Back to top
       </a>
       <div className="footer-upper-lists__container">

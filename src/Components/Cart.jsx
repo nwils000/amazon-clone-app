@@ -48,7 +48,7 @@ export default function Cart({
           <div className="checkout-button">Proceed to checkout</div>
         </div>
       </div>
-      <Footer />
+      <Footer top={"/cart"} />
     </>
   );
 }
