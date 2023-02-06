@@ -4,6 +4,7 @@ import "../CSS/app.css";
 import { getItems } from "../Arrays/ItemsArray";
 import Home from "./Home";
 import Cart from "./Cart";
+import SignIn from "./SignIn";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -76,6 +77,7 @@ function App() {
           />
         }
       ></Route>
+      <Route path="sign-in" element={<SignIn />}></Route>
     </Routes>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PokemonAdd from "./PokemonAdd";
 export default function Body({ handleAddToCart }) {
   return (
@@ -85,9 +86,11 @@ export default function Body({ handleAddToCart }) {
         <div className="body__grid d">
           <div className="d-2">
             <h3>Sign in for the best experience</h3>
-            <button className="sign-in-securely__button">
-              Sign in securely
-            </button>
+            <Link to="/sign-in">
+              <button className="sign-in-securely__button">
+                Sign in securely
+              </button>
+            </Link>
           </div>
         </div>
         <div className="quad-grid__wrapper e">
