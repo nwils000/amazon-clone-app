@@ -82,7 +82,7 @@
 .cart-list-heading-flex {
   display: flex;
   flex-direction: row;
-  margin: 1.1rem 1.1rem 0 1.1rem;
+  margin: 5rem 1.1rem 0 1.1rem;
   width: auto;
   background-color: white;
 }
@@ -104,7 +104,7 @@
   background-color: white;
   height: 10rem;
   width: 26rem;
-  margin-top: 1.1rem;
+  margin-top: 5rem;
   margin-right: 1.5rem;
 }
 
@@ -144,7 +144,7 @@
 
 .cart-list-footer__wrapper {
   background-color: white;
-  margin: 0rem 1.1rem 1.1rem 1.1rem;
+  margin: 0rem 1.1rem 5rem 1.1rem;
   width: auto;
 }
 

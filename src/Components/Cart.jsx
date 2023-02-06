@@ -1,6 +1,7 @@
 import React from "react";
 import CartList from "./CartList";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Cart({
   cart,
@@ -47,6 +48,7 @@ export default function Cart({
           <div className="checkout-button">Proceed to checkout</div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
