@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CartList from "./CartList";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -46,7 +47,7 @@ export default function Cart({
             <span className="cart-total">{`$${cartTotal}`}</span>
           </div>
           <div className="checkout-button">
-            <a href="/sign-in">Proceed to checkout</a>
+            <Link to="/sign-in">Proceed to checkout</Link>
           </div>
         </div>
       </div>

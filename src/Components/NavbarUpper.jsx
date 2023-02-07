@@ -77,9 +77,9 @@ export default function NavbarUpper({ cartAmount, navbarCartAmountClass }) {
         <div className="signin-dropdown-content">
           <div className="signin-dropdown-content__grid">
             <div className="signin-dropdown-header" href="/">
-              <a href="/sign-in" className="login-button">
+              <Link to="/sign-in" className="login-button">
                 Sign in
-              </a>
+              </Link>
               <p>New customer? Start here</p>
             </div>
             <div className="signin-dropdown-container">
