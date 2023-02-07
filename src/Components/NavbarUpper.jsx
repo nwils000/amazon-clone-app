@@ -34,7 +34,7 @@ export default function NavbarUpper({ cartAmount, navbarCartAmountClass }) {
             className="search-dropdown"
             selected
             name="categories"
-            value="All"
+            defaultValue="All"
           >
             <option>&nbsp;&nbsp;&nbsp;All</option>
             <option>&nbsp;&nbsp;&nbsp;Apps & Games</option>
@@ -66,15 +66,15 @@ export default function NavbarUpper({ cartAmount, navbarCartAmountClass }) {
       </button>
 
       <div
-        class="signin-dropdown"
+        className="signin-dropdown"
         onMouseOver={() => setPageShadow("container__shadowed")}
         onMouseOut={() => setPageShadow("navbar-upper-container")}
       >
-        <button class="signin-dropbtn">
+        <button className="signin-dropbtn">
           <p className="signin__header">Hello, sign in</p>
           <p className="signin__subheader">Account & Lists</p>
         </button>
-        <div class="signin-dropdown-content">
+        <div className="signin-dropdown-content">
           <div className="signin-dropdown-content__grid">
             <div className="signin-dropdown-header" href="/">
               <a href="/sign-in" className="login-button">
