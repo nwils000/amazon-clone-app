@@ -90,8 +90,8 @@
 }
 
 .search-dropdown {
-  width: fill;
-  height: fill;
+  width: stretch;
+  height: stretch;
   background-color: #eaeaea;
   border-style: none;
   border-top-left-radius: 5px;
