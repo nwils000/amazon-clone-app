@@ -29,15 +29,11 @@ function App() {
       setCartAmountClass("cart-amount-99-plus");
       setNavbarCartAmountClass("navbar-cart-amount-99-plus");
     }
-    calculateTotel();
+    let number1 = 0;
+    let newCart1 = [...cart];
+    newCart1.map((cartItem) => (number1 += cartItem.price * cartItem.quantity));
+    setCartTotal(number1);
   }, [cart, cartAmount]);
-
-  function calculateTotel() {
-    let number = 0;
-    let newCart = [...cart];
-    newCart.map((cartItem) => (number += cartItem.price * cartItem.quantity));
-    setCartTotal(number);
-  }
 
   function handleAddToCart(index) {
     const newItem = items[index];
