@@ -31,13 +31,14 @@ body {
   background-color: #e3e6e6;
 }
 
-.not-compatible {
+.not-compatible,
+.not-compatible-large {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
   .not-compatible {
-    display: none;
+    display: block;
     font-size: 5rem;
     color: red;
     width: 90vw;
@@ -52,22 +53,10 @@ body {
     text-align: center;
   }
 
-  .navbar-upper-container {
-    display: none;
-  }
-
-  .lower__container {
-    display: none;
-  }
-
-  .checkout__wrapper {
-    display: none;
-  }
-
-  .body__container {
-    display: none;
-  }
-
+  .navbar-upper-container,
+  .lower__container,
+  .checkout__wrapper,
+  .body__container,
   .footer {
     display: none;
   }
