@@ -35,9 +35,9 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 768px) {
   .not-compatible {
-    display: block;
+    display: none;
     font-size: 5rem;
     color: red;
     width: 90vw;

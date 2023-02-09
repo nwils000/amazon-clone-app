@@ -219,3 +219,48 @@ h4 {
   grid-column: 1/5;
   height: auto;
 }
+
+@media screen and (max-width: 1650px) {
+  .body__container {
+    width: 100vw;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1083px) {
+  .footer .footer-upper-lists__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer .footer-lower-div {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .lower__container {
+    min-width: none;
+  }
+
+  .navbar-upper-container {
+    grid-template-columns: 130px 1fr 130px 85px 72px 17px;
+  }
+
+  .language-select {
+    display: none;
+  }
+
+  .location-select__button {
+    display: none;
+  }
+  .body__container .pokemon-grid {
+    display: none;
+  }
+  .body__container .body__images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .c h3 {
+    display: none;
+  }
+}
