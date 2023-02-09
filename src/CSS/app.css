@@ -43,6 +43,7 @@ body {
     width: 90vw;
     margin: 10vh auto 0 auto;
     text-align: center;
+    height: 100vh;
   }
 
   .not-compatible p {
