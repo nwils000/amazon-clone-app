@@ -11,6 +11,10 @@ export default function Home({
 }) {
   return (
     <>
+      <div className="not-compatible">
+        Your screen size is not compatible.
+        <p>Either zoom out, or use a different monitor.</p>
+      </div>
       <Navbar
         navbarCartAmountClass={navbarCartAmountClass}
         cartAmountClass={cartAmountClass}

@@ -30,3 +30,64 @@ body {
   overflow-x: hidden;
   background-color: #e3e6e6;
 }
+
+.not-compatible {
+  display: none;
+}
+
+@media screen and (max-width: 1600px) {
+  .not-compatible {
+    display: block;
+    font-size: 5rem;
+    color: red;
+    width: 90vw;
+    margin: 10vh auto 0 auto;
+    text-align: center;
+  }
+
+  .not-compatible p {
+    color: black;
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  .navbar-upper-container {
+    display: none;
+  }
+
+  .lower__container {
+    display: none;
+  }
+
+  .checkout__wrapper {
+    display: none;
+  }
+
+  .body__container {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .not-compatible {
+    font-size: 2rem;
+  }
+
+  .not-compatible p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .not-compatible {
+    font-size: 1rem;
+  }
+
+  .not-compatible p {
+    font-size: 0.6rem;
+  }
+}

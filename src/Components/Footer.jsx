@@ -4,7 +4,7 @@ import FooterLower from "./FooterLower";
 
 export default function Footer({ top }) {
   return (
-    <div>
+    <div className="footer">
       <FooterUpper top={top} />
       <FooterLower />
     </div>
